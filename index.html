@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cómo almacenar información de formularios en un archivo TXT con PHP: Guía práctica</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Cómo almacenar información de formularios en un archivo TXT con PHP: Guía
+      práctica
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
     <style>
-      h3{
+      body {
+        background-color: #fcfcfc;
+      }
+      h3 {
         color: #333;
         font-size: 30px;
         font-weight: 800;
       }
     </style>
-</head>
-<body>
-    
-<div class="container">
-  <div class="row mt-5 mb-4 ">
-    <div class="col-md-12">
-      <h3 class="text-center">Cómo almacenar información de formularios en un archivo TXT con PHP: Guía práctica <hr></h3>
-    </div>
-  </div>
-<form action="recibirForm.php" method="POST" class="row g-3">
-  <div class="col-md-6">
-    <label for="nombre" class="form-label">Nombre</label>
-    <input type="text" name="nombre" class="form-control" required>
-  </div>
-  <div class="col-md-6">
-    <label for="email" class="form-label">Email</label>
-    <input type="email" name="email" class="form-control" required>
-  </div>
-  <div class="col-12">
-    <label for="address" class="form-label">Dirección</label>
-    <input type="text" name="address" class="form-control" required>
-  </div>
-  
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">Pais</label>
-    <select name="pais" class="form-select" required>
-        <option value="Colombia">Colombia</option>
-        <option value="Mexico">Mexico</option>
-        <option value="Venezuela">Venezuela</option>
-    </select>
-  </div>
-  
-  <div class="col-12 text-center">
-    <button type="submit" class="btn btn-primary">Enviar mi formulario</button>
-  </div>
-</form>
-</div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5 mb-4">
+        <div class="col-md-12">
+          <h3 class="text-center">
+            Cómo almacenar información de formularios en un archivo TXT con PHP:
+            Guía práctica
+            <hr />
+          </h3>
+        </div>
+      </div>
+      <form action="recibirForm.php" method="POST" class="row g-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" name="nombre" class="form-control" required />
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" class="form-control" required />
+        </div>
+        <div class="col-12">
+          <label for="address" class="form-label">Dirección</label>
+          <input type="text" name="address" class="form-control" required />
+        </div>
 
-</body>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Pais</label>
+          <select name="pais" class="form-select" required>
+            <option value="Colombia">Colombia</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Venezuela">Venezuela</option>
+          </select>
+        </div>
+
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">
+            Enviar mi formulario
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
